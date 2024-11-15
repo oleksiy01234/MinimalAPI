@@ -1,6 +1,0 @@
-@MinimalAPI_HostAddress = http://localhost:5152
-
-GET {{MinimalAPI_HostAddress}}/hello_world/
-Accept: application/json
-
-###
