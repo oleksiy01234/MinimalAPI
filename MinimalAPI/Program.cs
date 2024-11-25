@@ -25,7 +25,7 @@ namespace MinimalAPI
             var response = await client.PostAsync(endpoint, content);
             var responseBody = await response.Content.ReadAsStringAsync();
 
-            app.MapGet("/", () => $"Hello World! Here is the response: \n\n{response}");
+            app.MapGet("/", () => $"Hello World! Here is the token: \n\n{token}\n\n And here is the response: \n\n{response}");
             app.Run();
         }
 
