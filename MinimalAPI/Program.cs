@@ -48,7 +48,7 @@ namespace MinimalAPI
 
         private static async Task<string> GenerateToken()
         {
-            var credential = new DefaultAzureCredential();
+            var credential = new ManagedIdentityCredential();
             var tokenRequestContext = new TokenRequestContext(["https://management.azure.com/.default"]);
             var accessToken = await credential.GetTokenAsync(tokenRequestContext);
 
